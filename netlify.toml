@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "npm install && npx vite build --config vite-netlify.config.ts"
+  command = "node build-script.js"
   publish = "dist/public"
 
 [build.environment]
