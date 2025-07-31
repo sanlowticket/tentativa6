@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "node build-script.js"
+  command = "node build-script.cjs"
   publish = "dist/public"
 
 [build.environment]
