@@ -1,11 +1,10 @@
 [build]
-  base = "."
-  command = "node build-script.cjs"
-  publish = "dist/public"
+  base = "client"
+  command = "npm install --prefix .. && npm run build --prefix .."
+  publish = "../dist/public"
 
 [build.environment]
   NODE_VERSION = "20"
-  NPM_VERSION = "10"
 
 [[redirects]]
   from = "/*"
