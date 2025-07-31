@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "node build-netlify.mjs"
+  command = "npm install && cd client && npx vite build --outDir ../dist/public --base ./"
   publish = "dist/public"
 
 [build.environment]
